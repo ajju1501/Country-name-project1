@@ -3,12 +3,14 @@
     margin: 0;
     box-sizing: border-box;
     font-family: "Poppins", sans-serif;
-  }
-  body {
+}
+
+body {
     background-color: #3d64e6;
     background-image: url(https://www.nationsonline.org/gallery/World/World-Flag-map-Nell.jpg);
-  }
-  .container {
+}
+
+.container {
     background-color: rgb(140, 140, 231);
     width: 80vw;
     max-width: 37.5em;
@@ -19,63 +21,125 @@
     left: 50%;
     border-radius: 0.62em;
     box-shadow: 0 1.25em 1.8em rgba(8, 21, 65, 0.25);
-  }
-  .search-wrapper {
+}
+
+.search-wrapper {
     display: grid;
     grid-template-columns: 9fr 3fr;
-    gap: 1.25em;
-  }
-  .search-wrapper button {
-    font-size: 1em;
-    background-color: #3d64e6;
-    color: #ffffff;
-    padding: 0.8em 0;
-    border: none;
-    border-radius: 1.5em;
-  }
-  .search-wrapper input {
+    gap: 5px;
+}
+
+.search-wrapper button {
+    /* font-size: 1em; */
+    float: left;
+    width: 40%;
+    padding: 10px;
+    background: #1111e0;
+    color: white;
+    font-size: 17px;
+    border: 1px solid grey;
+    border-left: none;
+    /* Prevent double borders */
+    cursor: pointer;
+}
+
+.search-wrapper input {
     font-size: 1em;
     padding: 0 0.62em;
     border: none;
     border-bottom: 2px solid #3d64e6;
     outline: none;
     color: #222a43;
-  }
-  #result {
+}
+
+#search-btn i {
+    align-items: center;
+}
+
+#result {
     margin-top: 1.25em;
-  }
-  .main{
+}
+
+.main {
     color: white;
-  }
-  .container .flag-img {
+}
+
+.container .flag-img {
     display: inline;
     width: 10%;
     min-width: 7.5em;
     margin: 20px;
-  }
-  .container h2 {
+}
+
+.container h2 {
     font-weight: 600;
     color: #ebebeb;
     text-align: center;
     text-transform: uppercase;
     letter-spacing: 2px;
     margin-bottom: 1.8em;
-  }
-  .data-wrapper {
+}
+
+.data-wrapper {
     margin-bottom: 1em;
     letter-spacing: 0.3px;
-  }
-  .container h4 {
+}
+
+.container h4 {
     display: inline;
     font-weight: 500;
     color: white;
-  }
-  .container span {
+}
+
+.container span {
     color: white;
-  }
-  .container h3 {
+}
+
+.container h3 {
     text-align: center;
     font-size: 1.2em;
     font-weight: 400;
     color: white;
-  }
+}
+
+.container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.container i {
+    align-items: center;
+}
+
+@media (min-width: 576px) {
+    .container {
+        max-width: 540px;
+    }
+}
+
+@media (min-width: 768px) {
+    .container {
+        max-width: 720px;
+    }
+}
+
+@media (min-width: 280px) {
+    .container {
+        max-width: 400px;
+    }
+}
+
+@media (min-width: 992px) {
+    .container {
+        max-width: 960px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1140px;
+    }
+}
